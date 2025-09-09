@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Looksmaxing Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Looksmaxing Face Editor</h1>
+  <p class="disclaimer">This demo randomly assigns a rating and is for entertainment only.</p>
+
+  <div class="upload-section">
+    <label for="imageInput">Upload your face:</label>
+    <input type="file" id="imageInput" accept="image/*" />
+  </div>
+
+  <div class="preview-section">
+    <img id="preview" alt="Your face will appear here" />
+  </div>
+
+  <div class="rating-section">
+    <p>Your rating: <span id="ratingResult">N/A</span></p>
+  </div>
+
+  <div class="procedure-section">
+    <h2>Cosmetic Procedures</h2>
+    <p>Select procedures to see potential impact.</p>
+    <label><input type="checkbox" value="1" class="procedure" /> Nose Job</label>
+    <label><input type="checkbox" value="1" class="procedure" /> Jawline Enhancement</label>
+    <label><input type="checkbox" value="1" class="procedure" /> Skin Resurfacing</label>
+    <label><input type="checkbox" value="1" class="procedure" /> Hair Transplant</label>
+    <button id="applyBtn">Apply Procedures</button>
+  </div>
+
+  <div class="simulate-section">
+    <h2>Simulate Alternative Hierarchy</h2>
+    <select id="hierarchySelect">
+      <option value="0">LTN (Low Tier Normie)</option>
+      <option value="1">MTN (Mid Tier Normie)</option>
+      <option value="2">HTN (High Tier Normie)</option>
+      <option value="3">Chadlite</option>
+      <option value="4">Chad</option>
+      <option value="5">Adam (Gigachad)</option>
+    </select>
+    <button id="simulateBtn">Simulate</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
