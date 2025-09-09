@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+.upload-section,
+.preview-section,
+.procedure-section,
+.simulate-section {
+  margin: 1rem 0;
+}
+
+#preview {
+  max-width: 300px;
+  display: block;
+  margin-top: 1rem;
+  border: 2px solid #ccc;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}

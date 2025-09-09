@@ -1,0 +1,8 @@
+{
+  "name": "rya-cam-demo",
+  "version": "1.0.0",
+  "description": "Looksmaxing face editor demo",
+  "scripts": {
+    "test": "echo 'No tests yet'"
+  }
+}
