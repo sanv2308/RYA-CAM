@@ -1,0 +1,156 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  background-color: #05070c;
+  color: #e5f0ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(30, 60, 110, 0.25), transparent 55%),
+    radial-gradient(circle at bottom, rgba(10, 20, 40, 0.9), #05070c 60%);
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100vh;
+}
+
+.panel {
+  background: rgba(6, 10, 18, 0.9);
+  border-right: 1px solid rgba(120, 170, 255, 0.15);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.panel h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #9db9ff;
+}
+
+.panel section {
+  background: rgba(12, 20, 36, 0.7);
+  border: 1px solid rgba(120, 170, 255, 0.15);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panel label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #8fa8e8;
+}
+
+.panel input[type='range'] {
+  width: 100%;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #7ef9ff;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.canvas-wrap {
+  position: relative;
+}
+
+.hud {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: grid;
+  gap: 16px;
+  max-width: 420px;
+}
+
+.hud-card {
+  background: rgba(6, 10, 18, 0.6);
+  border: 1px solid rgba(120, 170, 255, 0.2);
+  border-radius: 16px;
+  padding: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.hud-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #9db9ff;
+  margin-bottom: 10px;
+}
+
+.stat-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #d7e6ff;
+}
+
+.regime-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(120, 170, 255, 0.15);
+  overflow: hidden;
+}
+
+.regime-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7ef9ff, #7a8cff, #ff9bcf);
+}
+
+.confluence-list {
+  display: grid;
+  gap: 6px;
+}
+
+.confluence-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #c7d9ff;
+}
+
+.legend {
+  font-size: 11px;
+  color: #84a3f3;
+  line-height: 1.4;
+}
